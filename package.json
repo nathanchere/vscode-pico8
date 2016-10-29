@@ -1,0 +1,26 @@
+{
+    "name": "pico8",
+    "displayName": "PICO-8 language support",
+    "description": "Syntax highlighting for P8 files",
+    "version": "1.0.0",
+    "publisher": "nathanchere",
+    "engines": {
+        "vscode": "^1.5.0"
+    },
+    "categories": [
+        "Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "pico8",
+            "aliases": ["PICO-8 Lua", "pico8"],
+            "extensions": [".p8"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "pico8",
+            "scopeName": "source.p8",
+            "path": "./syntaxes/pico8.tmLanguage"
+        }]
+    }
+}
